@@ -1,6 +1,6 @@
 from constants import ___
 
-def is_loan_amount_too_big(loan_amount_usd: int, max_loan_amount_for_user_usd: int) -> bool:
+def is_loan_amount_too_big(loan_amount_usd: int, max_loan_amount_for_user_usd: int | None) -> bool:
     pass
 
 
