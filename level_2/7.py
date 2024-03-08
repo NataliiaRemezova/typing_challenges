@@ -1,10 +1,8 @@
 from constants import ___
+from typing import TypeAlias
 
-@dataclasses.dataclass
-class User:
-    first_name: str
-    age: int
-    spent_list: list[int]
+
+User: TypeAlias = tuple[str, int, list[int]]
 
 
 def calculate_total_spent_for_user(user: User) -> int:

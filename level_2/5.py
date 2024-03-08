@@ -1,11 +1,8 @@
 from constants import ___
+from typing import TypeAlias
 
 
-@dataclasses.dataclass
-class User:
-    name: str
-    age: int
-    email: str
+User: TypeAlias = tuple[str, int, str]
 
 
 def get_current_user() -> User:

@@ -1,9 +1,13 @@
 import datetime
-
+from typing import TypeAlias
 from constants import ___
 
 
-def parse_receipt(raw_receipt: str) -> tuple[int, datetime.date,list[tuple[str, int, float]]]:
+Product: TypeAlias = tuple[str, int, float]
+Receipt: TypeAlias = tuple[int, datetime.date,list[Product]]
+
+
+def parse_receipt(raw_receipt: str) -> Receipt:
     pass
 
 
