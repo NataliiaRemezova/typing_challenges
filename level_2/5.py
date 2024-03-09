@@ -1,7 +1,11 @@
 from constants import ___
+from typing import TypeAlias
 
 
-def get_current_user() -> ___:
+User: TypeAlias = tuple[str, int, str]
+
+
+def get_current_user() -> User:
     pass
 
 
